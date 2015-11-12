@@ -1,0 +1,20 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Anunt creation</h1>
+    {#{{ form_start(form) }}#}
+    {#{{ form_widget(form.title) }}#}
+    {#{{ form_widget(form.price) }}#}
+    {#{{ form_end(form) }}#}
+    {{ form(form) }}
+    {# form-start+form widget+form-end recomandate#}
+    {#form(form)-randeaza toate campurile:price,time,description#}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('anunt') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}
